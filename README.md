@@ -4,7 +4,7 @@ This repository is for the Integrating With HubSpot I: Foundations course. This 
 
 To read the full directions, please go to the [practicum instructions](https://app.hubspot.com/academy/l/tracks/1092124/1093824/5493?language=en).
 
-**Custom Object Link: Technologies** https://app.hubspot.com/sales-products-settings/48508447/object/2-38101974
+**Custom Object Link: Technologies** https://app.hubspot.com/contacts/48508447/objects/2-38101974/views/all/list
 ___
 ## Tips:
 - Commit to your repository often. Even if you make small tweaks to your code, it’s best to be committing to your repository frequently.
