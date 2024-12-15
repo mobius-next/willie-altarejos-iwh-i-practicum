@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  head
+    title Update Custom Object Form | Integrating With HubSpot | Practicum
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Update Custom Object Form
+    a(href="/") Return to the homepage
+    form(method="POST", action="/update-cobj")
+      div
+        label(for="SkillID") SkillID:
+        input(type="text", id="Skillid", name="skillid", required)
+      div  
+        label(for="Name") Name:
+        input(type="text", id="Name", name="Name", required)
+      div
+        label(for="Vendor") Vendor:
+        input(type="text", id="Vendor", name="Vendor", required)
+    
+      // Add other input fields for your custom properties here
+      div
+        input(type="submit", value="Submit")
