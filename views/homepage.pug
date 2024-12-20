@@ -1,22 +1,25 @@
 doctype html
 html(lang="en")
   head
-    title Update Custom Object Form | Integrating With HubSpot | Practicum
+    title Homepage | Integrating With HubSpot I Practicum
     link(rel="stylesheet", href="/css/style.css")
   body
-    h1 Update Custom Object Form
-    a(href="/") Return to the homepage
-    form(method="POST", action="/update-cobj")
-      div
-        label(for="SkillID") SkillID:
-        input(type="text", id="Skillid", name="skillid", required)
-      div  
-        label(for="Name") Name:
-        input(type="text", id="Name", name="Name", required)
-      div
-        label(for="Vendor") Vendor:
-        input(type="text", id="Vendor", name="Vendor", required)
+    h1 Custom Objects Records
+
+    a(href="/update-cobj") Add to this table
     
-      // Add other input fields for your custom properties here
-      div
-        input(type="submit", value="Submit")
+    if records && records.length > 0
+      table
+        thead
+          tr
+            th Skill ID
+            th Name
+            th Vendor
+        tbody
+          each record in records
+            tr
+              td= record.properties.id
+              td= record.properties.name
+              td= record.properties.vendor
+    else
+      p No records found.

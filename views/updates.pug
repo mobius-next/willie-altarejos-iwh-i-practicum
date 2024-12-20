@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1 Update Custom Object
+
+    // Link to return to the homepage
+    a(href="/") Return to the homepage
+
+    // Form to create a new custom object record
+    form(action="/update-cobj" method="POST")
+      div
+        label(for="id") Skill ID:
+        input(type="text" id="id" name="id" required)
+      div
+        label(for="name") Name:
+        input(type="text" id="name" name="name" required)
+      div
+        label(for="vendor") Vendor:
+        input(type="text" id="vendor" name="vendor" required)
+      button(type="submit") Create Record
